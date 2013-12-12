@@ -23,12 +23,9 @@ log.o: log.c log.h
 
 
 install:
-	mkdir -p /home/memagent
-	mkdir -p /home/memagent/bin
-	mkdir -p /home/memagent/log
-	mkdir -p /home/memagent/conf
-	cp -f  magent /home/memagent/bin
-	cp  -f ./config/magent.conf /home/memagent/conf/magent.conf
+	mkdir -p /usr/local/bin
+	cp magent /usr/local/bin
+	cp init.d/magent /etc/init.d/magent
 
 clean: 
 	rm -f *.o *~ $(PROGS)
