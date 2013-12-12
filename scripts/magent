@@ -21,7 +21,7 @@
 PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin
 DESC="Description of the service"
 NAME=magent
-DAEMON=/usr/sbin/$NAME
+DAEMON=/usr/local/bin/$NAME
 DAEMON_ARGS="-c /etc/magent.conf"
 PIDFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME

@@ -25,7 +25,7 @@ log.o: log.c log.h
 install:
 	mkdir -p /usr/local/bin
 	cp magent /usr/local/bin
-	cp init.d/magent /etc/init.d/magent
+	cp scripts/magent /etc/init.d/magent
 
 clean: 
 	rm -f *.o *~ $(PROGS)
